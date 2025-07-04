@@ -25,7 +25,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="p-8 flex justify-center">
+      <section>
         <CarouselProduct products={products.data} />
       </section>
     </div>
