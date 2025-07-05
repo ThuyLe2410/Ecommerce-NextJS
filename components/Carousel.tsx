@@ -36,7 +36,7 @@ export default function CarouselProduct({ products }: Props) {
   return (
     <Card className="w-full relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 border-0">
       {currentProduct.images && currentProduct.images[0] && (
-        <div className="relative h-80 w-full overflow-hidden">
+        <div className="relative h-200 w-full overflow-hidden">
            <Image
             src={currentProduct.images[0]}
             alt={currentProduct.name}
@@ -67,7 +67,7 @@ export default function CarouselProduct({ products }: Props) {
         </div>
       )}
 
-      
+
       <CardContent className="p-6 space-y-3">
         <div className="flex items-start justify-between">
           <CardTitle className="text-xl font-bold text-gray-800 leading-tight line-clamp-2">
