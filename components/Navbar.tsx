@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -22,7 +23,11 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div></div>
+        <div className="flex items-center space-x-4">
+          <Link href="/checkout">
+            <ShoppingCart />
+          </Link>
+        </div>
       </div>
     </nav>
   );
